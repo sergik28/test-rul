@@ -72,10 +72,39 @@
 		<a href=""><div class="buttin_menu_left"><span class="ico_menu"><img src="img/out.png"></span><span class="name_button">Выход</span></div></a>
 	</div>
 	<div class="col-auto centerBlock">
-		
+		<div class="row justify-content-around">
+			<div class="col-3">
+			<div class="row cont">
+				<img src="img/user.png" height="48px">
+				<div class="text_name_cont">Пользователей<br><span class="value">446</span></div>
+			</div>
+			</div>	
+
+			<div class="col-3">
+			<div class="row cont">
+				<img src="img/online.png" height="42px" id="circle_online">
+				<div class="text_name_cont">Сейчас онлайн<br><span class="value">45</span></div>
+			</div>
+			</div>
+
+			<div class="col-3">
+			<div class="row cont">
+				<img src="img/cash.png" height="48px">
+				<div class="text_name_cont">Всего заработано<br><span class="value">14660</span>р</div>
+			</div>
+			</div>		
+		</div>
 	</div>
 	<div class="col-auto chatBlock">
-		<div class="zagl_block"><span class="text_chat_zagl">Чат Игроков</span></div>
+		<div class="zagl_block">
+			<span class="button_chat text_chat_closed">Скрыть чат</span>
+			<span class="button_chat text_chat_open">Открыть чат</span>		
+		</div>
+		<div class="chat_content"></div>
+		<div class="block_user_write">
+			<textarea id="write_message" placeholder="Введите сообщение (макс. 100 символов)" maxlength="225"></textarea>
+			<div class="button_send_message">Отправить</div>
+		</div>
 	</div>
 </div>
 

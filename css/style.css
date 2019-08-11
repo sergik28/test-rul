@@ -17,6 +17,7 @@ header{
 
 body{
 	height: 1500px;
+	background-color: #F0F0F0;
 }
 
 .row{
@@ -64,7 +65,6 @@ body{
 }
 
 .centerBlock{
-	border: 2px solid red;
 	width: 800px;
 	margin: 0 auto;
 	margin-top: 70px;
@@ -82,6 +82,7 @@ body{
 	height: 100vh;
 	background-color: #F3F3F3;
 	padding: 0px;
+	overflow: hidden;
 }
 
 .button_menu{
@@ -93,7 +94,7 @@ body{
 	margin-left: 30px;
 	width: 100%;
 	display: none;
-	margin-top: 5px;
+	margin-top: 0px;
 }
 #arrow_right{
 	transform: rotate(180deg);
@@ -124,7 +125,7 @@ body{
 	margin-top: 0px;
 }
 
-.text_chat_zagl{
+.text_chat_closed{
 	border: 3px solid #fff;
 	padding: 10px;
 	color: #fff;
@@ -132,4 +133,82 @@ body{
 	font-weight: bold;
 	letter-spacing: 1px;
 	z-index: 99999;
+}
+
+.text_chat_open{
+	border: 3px solid #fff;
+	padding: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	z-index: 99999;
+	display: none;
+}
+
+.button_chat{
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.button_chat:hover{
+	cursor: pointer;
+	background-color: #fff;
+	color: #000;
+	transition: 0.5s;
+}
+
+
+.cont{
+	padding: 10px;
+	text-align: center;	
+	width: 250px
+}
+
+.text_name_cont{
+	margin-left: 7px;
+	font-size: 	19px;
+}
+
+
+#circle_online{
+	animation: rotate 4s linear 0s;
+	animation-iteration-count: 	infinite;	
+}
+
+
+@keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+
+.chat_content{
+	background-color: #D5D5D5;
+	width: 100%;
+	height: 70vh;
+	overflow-y: scroll;
+}
+
+.block_user_write{
+	border: 1px solid #fff;
+}
+
+#write_message{
+	width: 100%;
+	font-size: 17px;
+	padding: 8px;
+}
+
+.button_send_message{
+	border: 1px solid #FF4157;
+	background-color: #FF4157;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	color: #fff;
 }

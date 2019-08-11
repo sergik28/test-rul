@@ -22,3 +22,15 @@ $('.button_menu_open').click(function() {
 	setTimeout(hide_close, 200);
 });
 
+$('.text_chat_closed').click(function() {
+	$('.chatBlock').css({'height' : '68px'}).css({'transition' : '0.5s'});
+	$(this).hide('slow');
+	$('.text_chat_open').show('slow');
+});
+
+
+$('.text_chat_open').click(function() {
+	$('.chatBlock').css({'height' : '100vh'}).css({'transition' : '0.5s'});
+	$('.text_chat_closed').show('slow');
+	$('.text_chat_open').hide('slow');
+});
