@@ -1,0 +1,33 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+header{
+	background-color: #151515;
+	padding: 10px;
+	position: fixed;
+	width: 100%
+}
+
+.row{
+	margin-right: 0px;
+}
+
+#logo{
+	color: #FFBC21;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+
+.headers{
+	text-align: center;
+}
+
+#auth{
+	margin-top: 3px;
+}
