@@ -11,7 +11,12 @@ header{
 	background-color: #151515;
 	padding: 10px;
 	position: fixed;
-	width: 100%
+	width: 100%;
+	z-index: 9999;
+}
+
+body{
+	height: 1500px;
 }
 
 .row{
@@ -25,10 +30,6 @@ header{
 	margin-left: 70px;
 	letter-spacing: 2px;
 }
-
-
-
-
 
 .navbar{
  background: #151515;
@@ -51,4 +52,84 @@ header{
 
 .navbar-collapse{
  justify-content: flex-end;
+}
+
+.leftMenu{
+	margin-top: 70px;
+	height: 100vh;
+	width: 300px;
+	background-color: #F3F3F3;
+	position: fixed;
+	padding: 0px;
+}
+
+.centerBlock{
+	border: 2px solid red;
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 70px;
+
+}
+
+
+.chatBlock{
+	border: 1px solid #F3F3F3;
+	width: 300px;
+	position: fixed;
+	margin-top: 70px;
+	left: auto;
+	right: 0;
+	height: 100vh;
+	background-color: #F3F3F3;
+	padding: 0px;
+}
+
+.button_menu{
+	text-align: center;
+	width: 100%;
+}
+.button_menu_open{
+	text-align: left;
+	margin-left: 30px;
+	width: 100%;
+	display: none;
+	margin-top: 5px;
+}
+#arrow_right{
+	transform: rotate(180deg);
+}
+.buttin_menu_left{
+	width: 100%;
+	padding: 5px;
+	font-size: 21px;
+	margin-top: 15px;
+	color: #000;
+}
+
+.ico_menu{
+	margin-left: 20px;
+
+}
+
+.name_button{
+	margin-left: 15px;
+}
+
+.zagl_block{
+	border: 1px solid #151515;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	background-color: #151515;
+	margin-top: 0px;
+}
+
+.text_chat_zagl{
+	border: 3px solid #fff;
+	padding: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	z-index: 99999;
 }
