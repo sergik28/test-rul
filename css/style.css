@@ -62,13 +62,12 @@ body{
 	background-color: #F3F3F3;
 	position: fixed;
 	padding: 0px;
+	z-index: 999;
 }
 
 .centerBlock{
-	width: 800px;
 	margin: 0 auto;
 	margin-top: 70px;
-
 }
 
 
@@ -83,6 +82,7 @@ body{
 	background-color: #F3F3F3;
 	padding: 0px;
 	overflow: hidden;
+	z-index: 999;
 }
 
 .button_menu{
@@ -125,7 +125,7 @@ body{
 	margin-top: 0px;
 }
 
-.text_chat_closed{
+.text_chat_top{
 	border: 3px solid #fff;
 	padding: 10px;
 	color: #fff;
@@ -158,11 +158,32 @@ body{
 	transition: 0.5s;
 }
 
+.button_chat{
+	position: fixed;
+	border: 3px solid #000;
+	padding: 10px;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	z-index: 99999;
+	margin-top: 35vh;
+	transform: rotate(-90deg);
+	margin-left: -100px;
+	width: 150px;
+	text-align: center;
+}
+
+.open_chat{
+	display: none;
+}
+
 
 .cont{
 	padding: 10px;
 	text-align: center;	
-	width: 250px
+	width: 250px;
+	margin: 0 auto;
 }
 
 .text_name_cont{
@@ -211,4 +232,52 @@ body{
 	padding: 10px;
 	text-align: center;
 	color: #fff;
+}
+
+.bt-ct{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.block_lent{
+	background-color: #242424;
+	padding: 15px;
+	margin: 0 auto;
+	margin-top: 40px;
+	overflow-x: hidden;
+	display: flex;
+	height: 90px;
+	width: 100%;
+	min-width: 400px;
+	
+}
+
+.live_content{
+	display: flex;
+	min-width: 1000px;
+	overflow-x: hidden;
+}
+
+.item_drop{
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	font-size: 25px;
+	margin-right: 10px;
+}
+
+.green{
+	background-color: #19B03E;
+}
+
+.red{
+	background-color: #E1134B;
+}
+
+
+.black{
+	background-color: #282828;
 }
